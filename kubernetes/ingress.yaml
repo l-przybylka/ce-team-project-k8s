@@ -4,7 +4,7 @@ metadata:
   name: my-ingress
 spec:
   rules:
-  - host: localhost
+  - host: http://aeedff6cb593a4c92953adf90351519d-5ceedd59fc06bdea.elb.eu-west-2.amazonaws.com/
     http:
       paths:
       - path: /
