@@ -15,8 +15,8 @@ spec:
       containers:
       - name: learners-frontend
         image: shenukacj/learners-frontend:latest
+        ports:
+        - containerPort: 80
         env:
         - name: VITE_API_BASE_URL
           value: http://aeedff6cb593a4c92953adf90351519d-5ceedd59fc06bdea.elb.eu-west-2.amazonaws.com:3000
-        ports:
-        - containerPort: 80
