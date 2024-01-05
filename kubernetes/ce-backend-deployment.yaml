@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: learners-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: learners-api
+  template:
+    metadata:
+      labels:
+        app: learners-api
+    spec:
+      containers:
+      - name: learners-api
+        image: shenukacj/learners-api:latest
+        ports:
+        - containerPort: 8080
